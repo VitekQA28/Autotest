@@ -1,0 +1,8 @@
+html_after_click = self.__driver.page_source
+            html = html_after_click
+
+# Создаем файл и записываем HTML-страницу в него
+            with io.open('page.html', 'w', encoding='utf-8') as file:
+                file.write(html)
+
+            print('HTML-страница сохранена в файле page.html')
